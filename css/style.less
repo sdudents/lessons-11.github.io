@@ -1,0 +1,225 @@
+header {
+	h1 {
+		text-align: center;
+		font-size: 30pt;
+		margin-top: 15px;
+	}
+}
+.main__list {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	margin-top: 60px;
+
+.element_1 {
+	width: 278px;
+	height: 190px;
+	background: url(../img/iphone/iPhone-mat.png) no-repeat;
+	transition: all 1s;
+	background-color: rgba(0,0,0,0,5);
+	color: white;
+	filter: blur(1px);
+	&:hover {
+		width: 278px;
+		height: 190px;
+		background: url(../img/transition/mat.png) no-repeat;
+		cursor: pointer;
+		filter: none;
+		span {
+			display: none;
+		}
+		a {
+			display: flex;
+			transition: .2s;
+			color: #703df2;
+			font-size: 20px;
+			justify-content: center;
+			padding-top: 40px;
+
+		}
+		}
+	
+	}
+.element_2 {
+	width: 278px;
+	height: 190px;
+	background: url(../img/iphone/iPhone-Rose-gold.png) no-repeat;
+	transition: all 1s;
+	background-color: rgba(0,0,0,0,5);
+	color: white;
+	filter: blur(1px);
+	&:hover {
+		width: 278px;
+		height: 190px;
+		background: url(../img/transition/rose.png) no-repeat;
+		cursor: pointer;
+		filter: none;
+		span {
+			display: none;
+		}
+		a {
+			display: flex;
+			transition: .2s;
+			color: #703df2;
+			font-size: 20px;
+			justify-content: center;
+			padding-top: 40px;
+
+		}
+		}
+	}
+.element_3 {
+	width: 278px;
+	height: 190px;
+	background: url(../img/iphone/iPhone-Gold.png) no-repeat;
+	transition: all 1s;
+	background-color: rgba(0,0,0,0,5);
+	color: white;
+	filter: blur(1px);
+	&:hover {
+		width: 278px;
+		height: 190px;
+		background: url(../img/transition/gold.png) no-repeat;
+		cursor: pointer;
+		filter: none;
+		span {
+			display: none;
+		}
+		a {
+			display: flex;
+			transition: .2s;
+			color: #703df2;
+			font-size: 20px;
+			justify-content: center;
+			padding-top: 40px;
+
+		}
+		}
+	}	
+.element_4 {
+	width: 278px;
+	height: 190px;
+	background: url(../img/iphone/iPhone-silver.png) no-repeat;
+	transition: all 1s;
+	filter: blur(1px);
+	color: white;
+	&:hover {
+		width: 278px;
+		height: 190px;
+		background: url(../img/transition/silver.png) no-repeat;
+		cursor: pointer;
+		filter: none;
+		span {
+			display: none;
+		}
+		a {
+			display: flex;
+			transition: .2s;
+			color: #703df2;
+			font-size: 20px;
+			justify-content: center;
+			padding-top: 40px;
+
+		}
+		}
+	}
+	.sign {
+		display: flex;
+		justify-content: flex-end;
+		flex-direction: column;
+		text-align: center;
+		
+		span {
+			
+			
+		}
+		a {
+			display: block;
+			margin-top: 25px;
+			padding: 25px;
+			text-decoration: none;
+			color: grey;
+		}
+	}
+
+}	
+	.dws {
+		position: absolute;
+		left: 50%;
+		top: 60%;
+		transform: translate(-50%,-50%);
+	}
+	.blockImg  {
+		width: 600px;
+		height: 288px;
+		overflow: hidden;
+		cursor: pointer;
+		margin: 0 auto;
+		background: #000;
+
+	}
+	.blockImg img {
+			width: 100%;
+			transition: .5s;
+	}
+	.dws:hover .blockImg img {
+		transform: rotate(+5deg) scale(1.3);
+		filter: blur(1px);
+		opacity: .5;
+	}
+	.blockText {
+		position: absolute;
+		top: 30px;
+		left: 44px;
+		right: 47px;
+		bottom: 30px;
+	}
+	.text {
+		color: #FFF;
+		text-transform: uppercase;
+		padding: 0 20px;
+		opacity: 0;
+	}
+	.text h2 {
+		font-size: 30px;
+	}
+	
+	.text span {
+		color: orange;
+		padding-bottom: 3px;
+		border-bottom: 2px solid #FFFFFF;
+	}
+	.text p {
+		position: absolute;
+		top: 180px;
+		width: 250px;
+		border-left: 4px solid orange;
+		padding: 0 10px;
+	}
+	.blockText::before,
+	.blockText::after {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		transition: .5s
+	}
+	.blockText::before {
+		border-top: 1px solid #FFF;
+		border-bottom: 1px solid #FFF;
+		transform: scale(0,1);
+	}
+	.blockText::after {
+		border-left: 1px solid #FFF;
+		border-right: 1px solid #FFF;
+		transform: scale(1,0);
+	}
+	.dws:hover .blockText::before,
+	.dws:hover .blockText::after {
+		transform: scale(1.1);
+	}
+	.dws:hover .text {
+		opacity: 1;
+	}
